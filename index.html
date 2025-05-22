@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="player">
+    <div class="cover rotate">
+      <img src="https://via.placeholder.com/250x250" id="album-art" alt="Album Art">
+    </div>
+    <h2 id="title">Unknown Song</h2>
+    <p id="artist">Unknown Artist</p>
+
+    <div class="time-display">
+      <span id="current-time">0:00</span>
+      <span id="duration">0:00</span>
+    </div>
+
+    <audio id="audio"></audio>
+
+    <div class="controls">
+      <div class="btn-group">
+        <button id="prev" class="btn">⏮</button>
+        <button id="play" class="btn">▶</button>
+        <button id="next" class="btn">⏭</button>
+      </div>
+      <input type="range" id="progress" value="0">
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+    </div>
+
+    <ul class="playlist" id="playlist"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
